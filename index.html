@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./libs/ol.css" type="text/css">
+    <link rel="stylesheet" href="green-vienna-style.css" type="text/css">
+    
+    
+    <title>Green Vienna</title>
+  </head>
+
+  <body>
+    
+    <script src="./libs/ol.js"></script>
+    <script src="main.js"></script>
+    
+    <div class="grid-container">
+      <div class="grid-1">
+        <div class="sidebar">
+          <h2>GREEN VIENNA</h2>
+          <h3>TREES</h3>
+          <p>Urban trees offer huge benefits for climate regulation and personal wellbeing. Inner Vienna has 6128 mapped. Now, choose the tree species and see their distribution</p>
+          <br>
+          <input type="radio" name='LayerRadioButton' value='trees-vienna:trees' checked><h4> All trees </h4>
+          <input type="radio" name='LayerRadioButton' value='trees-vienna:platanusxacerifolia'><h4> Platanus x Acerifolia</h4> 
+          <input type="radio" name='LayerRadioButton' value='trees-vienna:acerplatanoides'> <h4>Acer Platanoides</h4>
+          <input type="radio" name='LayerRadioButton' value='trees-vienna:acerpseudoplatanus'><h4> Acer Pseudoplatanus</h4>
+          <input type="radio" name='LayerRadioButton' value='trees-vienna:aesculushippocastanum'><h4> Aesculus Hippocastanum </h4>
+          <input type="radio" name='LayerRadioButton' value='trees-vienna:celtisaustralis'> <h4>Celtis Australis </h4>
+          <input type="radio" name='LayerRadioButton' value='trees-vienna:tiliacordata'> <h4>Tilia Cordata </h4>
+          
+          <h3>PARKS</h3>
+          <p>According to the OMS, people should have a green space within 400m from home. Let's check how is it in Inner Vienna</p>
+          <label>
+            Green buffers opacity
+            <input id="opacity-input" type="range" min="0" max="0.5" step="0.01" value="0" />
+            <span id="opacity-output"></span>
+          </label>
+
+          <h3>INFRASTRUCTURE</h3>
+          <p>Cycling infrastructure needs to provide the greatest sense of safety
+            and separation from traffic to be attractive and enjoyable. </p>
+            <ul class="legend">
+              <li><h4><hr size="3", color=#F5DD52 > Cycleways </h4></li><br>
+              <li><h4><hr class="dashed">Pedestrian roads</h4></li>
+          </ul>
+        </div>
+      </div>
+    
+    
+      <div class="grid-2">
+        <div id="map" class="map"></div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+
+  

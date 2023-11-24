@@ -1,0 +1,89 @@
+/*---------*/
+/* Web Map */
+/*---------*/
+
+.map {
+  height: 720px;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 100vh;
+}
+
+.sidebar{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.grid-1{
+  background-color: black;
+}
+
+/* basic positioning */
+.legend { list-style: none; display: grid; padding: inherit; }
+.legend li { float: top; margin-right: 20px; }
+.legend hr { float: left; width: 100%; margin-right: inherit; }
+.dashed { border:none;
+    border-top:3px dashed #B33030;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+    width:50%;
+  }
+
+
+ /* Most important texts*/
+h1 {
+  font-weight: bold;
+  font-family: 'Poppins';
+  font-size: 40px;
+  text-align: center;
+  color: rgba(249,249,249,1);
+  padding: 200px 0;
+}
+/* 3rd most important texts*/
+h2 {
+  font-family: 'Poppins black';
+  font-size: 28px;
+  text-align: left;
+  color: #F5DD52;
+  margin: 0;
+  margin-top: 20px;
+} 
+
+/* 2nd most important texts*/
+h3 {
+  font-weight: bold;
+  font-family: 'Poppins';
+  font-size: 16px;
+  text-decoration: underline;
+  text-align: left;
+  font-weight: 200;
+  color: rgba(249,249,249,1);
+  padding: 0px 0;
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+
+/* paragraphs */
+p {
+  font-weight: normal;
+  font-family: 'agenda';
+  font-size: 12px;
+  text-align: left;
+  color: rgba(249,249,249,1);
+  line-height: 1;
+  margin: 0;
+}
+
+h4 {
+  font-weight: normal;
+  font-family: 'agenda';
+  font-size: 14px;
+  text-align: left;
+  color: rgba(249,249,249,1);
+  margin: 2px;
+}
